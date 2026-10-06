@@ -1,0 +1,1373 @@
+# PROJECT EXECUTION COMMAND
+
+You are the autonomous senior engineering team responsible for taking the existing repository for the project **"AI Project Team Formation System"** from its actual current state to a working, validated, professional implementation.
+
+Do not merely create a plan.
+
+You must:
+
+**RECONSTRUCT ? AUDIT ? GAP ANALYZE ? ARCHITECT ? IMPLEMENT ? TEST ? DEBUG ? HARDEN ? VERIFY ? REPORT**
+
+Operate against the real repository and actual runtime environment.
+
+Do not invent files, APIs, database tables, credentials, completed features, test results, integrations, or deployment status.
+
+---
+
+# 1. EXECUTION ROLE
+
+Act simultaneously as:
+
+* Principal Software Architect
+* Python Engineer
+* AI/ML Engineer
+* Data Engineer
+* Database Architect
+* UX/UI Engineer
+* Security Engineer
+* QA Engineer
+* DevOps Engineer
+* Product Engineer
+* Technical Reviewer
+
+Your objective is to build a technically defensible college-level AI project that could also serve as the foundation for a future research/production system.
+
+---
+
+# 2. PROJECT IDENTITY
+
+## Project Name
+
+**AI Project Team Formation System**
+
+## Project Category
+
+AI/ML-powered educational decision-support system.
+
+## Primary Domain
+
+College/student project team formation.
+
+## Target Users
+
+### Students
+
+Students provide:
+
+* technical skills
+* non-technical skills
+* interests
+* project preferences
+* availability
+* work-style preferences
+* experience
+* resume/profile information
+
+### Faculty/Admin
+
+Faculty/admin users should be able to:
+
+* create projects
+* define project requirements
+* define team size
+* review student information
+* generate teams
+* inspect team quality
+* understand why students were matched
+* manually override assignments
+* lock students into teams
+* exclude incompatible combinations where justified
+* regenerate/re-optimize teams
+* review warnings
+* approve final teams
+* view analytics
+
+---
+
+# 3. PROJECT OBJECTIVE
+
+Build a system that intelligently forms project teams by considering multiple factors rather than simply randomly assigning students or grouping students by one attribute.
+
+The system should optimize combinations of:
+
+1. Technical skill coverage
+2. Skill complementarity
+3. Project requirements
+4. Student project preferences
+5. Availability
+6. Work-style compatibility
+7. Experience balance
+8. Team diversity/balance
+9. Fairness
+10. Team-size constraints
+
+The system must also explain **why** a particular team was formed.
+
+The system should be positioned as:
+
+> **A hybrid AI + optimization-based, explainable project team formation system.**
+
+Do NOT make unsupported claims that the system can perfectly predict team success.
+
+---
+
+# 4. IMPORTANT EXISTING RESEARCH CONTEXT
+
+Existing approaches have already explored:
+
+* optimization-based student grouping
+* preference-aware team formation
+* heterogeneous skill constraints
+* Belbin/team-role concepts
+* clustering
+* mathematical optimization
+* availability matching
+* work-style compatibility
+* semantic/embedding-based matching
+* AI/LLM-based project-skill extraction
+* feedback-driven team formation
+* student-centered team formation
+* explainability and diversity considerations
+
+Therefore:
+
+**Do NOT present "AI forms student teams" as the novelty by itself.**
+
+The project should differentiate itself by integrating these concepts into one practical and explainable workflow.
+
+The implementation should investigate and preserve the strongest ideas from existing systems while explicitly addressing their practical limitations.
+
+---
+
+# 5. CORE DIFFERENTIATING FEATURES
+
+Implement or architect the following as high-priority capabilities.
+
+## 5.1 AI Resume/Skill Extraction
+
+Allow a student to upload a resume where practical.
+
+Extract relevant:
+
+* technical skills
+* programming languages
+* frameworks
+* databases
+* tools
+* domain experience
+* soft skills
+* project experience
+* certifications where relevant
+
+Do not treat extracted skill scores as objective truth.
+
+Distinguish between:
+
+* self-reported skill
+* resume-derived skill
+* validated skill
+* inferred skill
+
+If confidence scoring is used, clearly label it as an estimate.
+
+---
+
+## 5.2 Project Requirement Analyzer
+
+Faculty should be able to enter a project such as:
+
+> AI-Based Smart Traffic Management System
+
+The system should identify or allow configuration of requirements such as:
+
+* Python
+* Machine Learning
+* Computer Vision
+* Database
+* Web Development
+* IoT
+* communication
+* documentation
+* presentation
+* leadership
+
+The system may use NLP/LLM/semantic techniques where justified.
+
+The final project requirements must remain reviewable/editable by faculty.
+
+AI suggestions must never silently become authoritative requirements.
+
+---
+
+# 6. SKILL COMPLEMENTARITY
+
+Do not simply group students who have identical skills.
+
+Prefer teams where required capabilities complement each other.
+
+Example:
+
+Student A:
+
+* Machine Learning
+
+Student B:
+
+* Backend
+
+Student C:
+
+* Frontend
+
+Student D:
+
+* Database
+
+Student E:
+
+* Presentation/Documentation
+
+A strong team should cover the project's important skill areas.
+
+Calculate both:
+
+### Skill Coverage
+
+How much of the required project skill set is covered?
+
+### Skill Complementarity
+
+How well do different members fill different capability gaps?
+
+Avoid producing teams containing many students with the same skill while leaving important project requirements uncovered.
+
+---
+
+# 7. PROJECT PREFERENCE MATCHING
+
+Students should be able to rank or select project preferences.
+
+Example:
+
+1. Project A
+2. Project C
+3. Project B
+
+The algorithm should consider preferences without allowing preferences to completely override essential skill or fairness constraints.
+
+---
+
+# 8. AVAILABILITY MATCHING
+
+Students should provide realistic availability.
+
+Example:
+
+Student A:
+
+* Monday 4–6 PM
+* Wednesday 4–6 PM
+
+Student B:
+
+* Monday 5–7 PM
+* Wednesday 4–6 PM
+
+Student C:
+
+* Wednesday 4–6 PM
+
+The system should be able to identify common collaboration windows.
+
+Availability conflicts should generate warnings.
+
+---
+
+# 9. WORK-STYLE COMPATIBILITY
+
+Allow students to provide structured preferences such as:
+
+* leadership
+* supporting
+* independent work
+* collaborative work
+* planning
+* experimentation
+* communication preference
+
+Use this as one factor rather than an absolute judgment of personality.
+
+Do not make sensitive psychological or personality claims without appropriate evidence.
+
+---
+
+# 10. EXPLAINABLE TEAM FORMATION
+
+This is a major feature.
+
+Never display only:
+
+> Team Score: 87%
+
+Instead explain:
+
+### Why this team?
+
+Example:
+
+* 92% required skill coverage
+* ML skill covered
+* Backend skill covered
+* Database skill covered
+* 3 common meeting slots
+* project preference compatibility
+* balanced experience
+* no major schedule conflict
+
+### Why this student?
+
+Example:
+
+* Python skill matches project requirement
+* ML experience fills team gap
+* preferred project matches
+* availability overlaps with team
+* improves skill diversity
+
+Every major recommendation should have understandable reasoning.
+
+---
+
+# 11. TEAM QUALITY SCORE
+
+Create a configurable scoring framework.
+
+Initial recommended baseline:
+
+```text
+Skill Coverage              30%
+Skill Complementarity       20%
+Project Preference          15%
+Availability                15%
+Work-Style Compatibility    10%
+Experience Balance          10%
+```
+
+Treat these as configurable defaults, not permanent scientific truths.
+
+The faculty/admin should be able to adjust weights if practical.
+
+The system must clearly show how the score was calculated.
+
+---
+
+# 12. CONSTRAINED OPTIMIZATION
+
+Do not rely solely on K-Means or another clustering algorithm.
+
+The team formation problem contains constraints and should use an appropriate optimization approach.
+
+Potential techniques include:
+
+* greedy optimization
+* Hungarian algorithm where appropriate
+* integer programming
+* constraint programming
+* optimization libraries
+* clustering as a preprocessing step
+* semantic similarity
+* embeddings
+* hybrid scoring + optimization
+
+Select the simplest technically justified approach.
+
+Do not use an algorithm merely because it sounds more "AI."
+
+---
+
+# 13. HARD CONSTRAINTS
+
+The system should support constraints such as:
+
+* required team size
+* each student assigned at most once
+* each student assigned to exactly one team when appropriate
+* required project skills
+* locked student assignments
+* excluded student combinations where faculty explicitly specifies them
+* availability requirements where configured
+
+Hard constraints must not be silently violated.
+
+---
+
+# 14. SOFT CONSTRAINTS
+
+Support weighted preferences such as:
+
+* project preference
+* availability quality
+* work style
+* skill similarity
+* skill diversity
+* experience balance
+* student preferences
+
+Soft constraints may be traded off according to configurable weights.
+
+---
+
+# 15. FAIRNESS
+
+Prevent the system from simply creating:
+
+> Team 1 = all strongest students
+> Team 2 = everyone else
+
+Consider:
+
+* academic/experience balance where appropriate
+* skill distribution
+* project preference distribution
+* workload distribution
+* availability
+* capability diversity
+
+Do not use protected or sensitive personal characteristics for unfair ranking.
+
+---
+
+# 16. CONFLICT DETECTION
+
+Before finalizing teams, identify issues.
+
+Examples:
+
+### Schedule Conflict
+
+"Two members have no common collaboration period."
+
+### Skill Gap
+
+"No member has sufficient database capability."
+
+### Preference Conflict
+
+"Three members selected the same project as their first preference."
+
+### Team Imbalance
+
+"Most required technical skills are concentrated in one member."
+
+### Constraint Conflict
+
+"Current locked assignments prevent complete skill coverage."
+
+Display these clearly.
+
+---
+
+# 17. WHAT-IF SIMULATION
+
+Faculty should be able to change parameters and regenerate teams.
+
+Examples:
+
+```text
+Team Size: 4 ? 5
+```
+
+or:
+
+```text
+ML Importance: 25% ? 35%
+```
+
+or:
+
+```text
+Availability Importance: 15% ? 10%
+```
+
+The system should explain why the resulting teams changed.
+
+---
+
+# 18. MANUAL OVERRIDE
+
+AI must not completely replace faculty judgment.
+
+Provide:
+
+* lock student to team
+* move student
+* exclude pair
+* regenerate affected teams
+* approve/reject generated teams
+
+When a manual change occurs, preserve it during re-optimization unless the faculty explicitly removes the constraint.
+
+---
+
+# 19. FEEDBACK LOOP
+
+After project completion, support collection of:
+
+* peer feedback
+* collaboration rating
+* communication rating
+* task completion
+* project result
+* student satisfaction
+
+Architect the system so historical feedback can eventually be used to improve future recommendations.
+
+Do NOT claim that the system already learns team success unless this functionality is genuinely implemented and validated.
+
+---
+
+# 20. TECHNOLOGY BASELINE
+
+## Current Explicit Project Baseline
+
+The project context currently indicates:
+
+**Python 3.11**
+
+and a **Streamlit-based Python application**.
+
+Preserve this architecture if the repository already uses it successfully.
+
+Do not migrate automatically.
+
+First inspect the repository.
+
+---
+
+# 21. PYTHON
+
+Use:
+
+**Python 3.11**
+
+Follow clean modular architecture.
+
+Potential components:
+
+```text
+app/
++-- ui/
++-- services/
++-- models/
++-- algorithms/
++-- data/
++-- utils/
++-- ai/
++-- config/
+```
+
+Adapt the structure to the actual repository instead of blindly imposing this structure.
+
+---
+
+# 22. STREAMLIT
+
+Use Streamlit for the current college-project UI if it is already established.
+
+The UI should provide:
+
+### Student
+
+* profile
+* skills
+* resume upload
+* preferences
+* availability
+* work-style inputs
+
+### Faculty/Admin
+
+* dashboard
+* project creation
+* requirement configuration
+* student management
+* team generation
+* team explanations
+* conflict warnings
+* what-if controls
+* manual overrides
+* approval
+* analytics
+
+Avoid fake buttons and non-functional UI.
+
+---
+
+# 23. DATABASE
+
+Inspect the existing repository before deciding the database architecture.
+
+For a prototype, SQLite may be appropriate if already established.
+
+For a more deployable architecture, PostgreSQL/Supabase can be considered.
+
+Do NOT introduce a second database merely for sophistication.
+
+Create a clear migration plan if moving from a local prototype database to PostgreSQL/Supabase becomes necessary.
+
+---
+
+# 24. POSSIBLE DATA MODEL
+
+Do not blindly create this schema. Verify requirements first.
+
+Potential entities:
+
+```text
+Student
+StudentSkill
+Skill
+Resume
+Project
+ProjectRequirement
+ProjectPreference
+Availability
+WorkStyle
+Team
+TeamMember
+TeamScore
+TeamConstraint
+TeamConflict
+Feedback
+GenerationRun
+```
+
+Relationships and constraints must be designed based on actual requirements.
+
+---
+
+# 25. AI/ML ARCHITECTURE
+
+Use AI only where it provides measurable value.
+
+Possible AI components:
+
+### NLP
+
+For:
+
+* resume parsing
+* skill extraction
+* project requirement extraction
+
+### Embeddings
+
+For:
+
+* semantic similarity
+* project/student matching
+* skill similarity
+
+### ML/Optimization
+
+For:
+
+* team formation
+* compatibility
+* balancing
+* constraint optimization
+
+Do not call simple deterministic scoring "AI."
+
+---
+
+# 26. MODEL TRANSPARENCY
+
+For every AI-derived result, preserve where possible:
+
+* input
+* extracted information
+* confidence
+* algorithm
+* score
+* important contributing factors
+
+Allow human review.
+
+---
+
+# 27. SECURITY
+
+Protect:
+
+* uploaded resumes
+* student information
+* authentication credentials
+* API keys
+* model/API credentials
+
+Never hardcode secrets.
+
+Never commit:
+
+```text
+.env
+API keys
+tokens
+passwords
+private credentials
+```
+
+Create `.env.example` where appropriate.
+
+Validate uploaded files.
+
+Restrict file types and reasonable file sizes.
+
+Do not expose private student information unnecessarily.
+
+---
+
+# 28. GITHUB AUTHENTICATION
+
+The development environment should use legitimate GitHub authentication.
+
+Do NOT implement any credential bypass.
+
+If GitHub CLI is available, use the authenticated GitHub CLI/Git credential workflow.
+
+Expected setup may include:
+
+```powershell
+gh auth login
+gh auth status
+gh auth setup-git
+```
+
+The coding agent must:
+
+1. Detect whether GitHub CLI is installed.
+2. Detect whether the user is already authenticated.
+3. If not authenticated, tell the user to complete the legitimate browser/device authentication step.
+4. Never request that the user paste a personal access token into source code.
+5. Never store credentials in the repository.
+6. Never disable GitHub security controls.
+7. Never expose authentication tokens in logs.
+
+After legitimate authentication is complete, Git operations should reuse the configured credential mechanism rather than repeatedly requesting credentials.
+
+---
+
+# 29. GITHUB WORKFLOW
+
+Prefer:
+
+```text
+feature branch
+?
+implementation
+?
+tests
+?
+commit
+?
+push
+?
+pull request
+?
+review
+?
+merge
+```
+
+Do not blindly overwrite `main`.
+
+Use meaningful commit messages.
+
+Examples:
+
+```text
+feat: add project requirement analyzer
+feat: implement team optimization engine
+feat: add explainable team scoring
+fix: resolve availability matching bug
+test: add team formation optimization tests
+```
+
+---
+
+# 30. REPOSITORY FORENSIC AUDIT
+
+Before making significant changes:
+
+Inspect:
+
+* directory structure
+* README
+* Python version
+* requirements.txt
+* virtual environment instructions
+* Streamlit entry point
+* source modules
+* AI/ML modules
+* database
+* configuration
+* environment variables
+* tests
+* sample data
+* documentation
+* Git configuration
+* existing branches
+* CI/CD if present
+
+Determine:
+
+```text
+WHAT EXISTS
+WHAT WORKS
+WHAT IS PARTIAL
+WHAT IS BROKEN
+WHAT IS MISSING
+WHAT MUST CHANGE
+WHAT MUST BE PRESERVED
+```
+
+Do not rewrite working code unnecessarily.
+
+---
+
+# 31. CURRENT ? TARGET GAP MATRIX
+
+Create internally:
+
+| Area            | Current | Target               | Gap       | Priority |
+| --------------- | ------- | -------------------- | --------- | -------- |
+| Student profile | verify  | complete             | determine | P0/P1    |
+| Skills          | verify  | AI-assisted          | determine | P0       |
+| Resume          | verify  | parsing              | determine | P1       |
+| Projects        | verify  | requirement analyzer | determine | P0       |
+| Matching        | verify  | hybrid optimization  | determine | P0       |
+| Explainability  | verify  | explanations         | determine | P0       |
+| Availability    | verify  | compatibility        | determine | P1       |
+| Work style      | verify  | compatibility        | determine | P1       |
+| Fairness        | verify  | balanced teams       | determine | P1       |
+| Manual override | verify  | faculty controls     | determine | P1       |
+| Feedback        | verify  | feedback loop        | determine | P2       |
+
+Do not fabricate the Current column.
+
+---
+
+# 32. IMPLEMENTATION ORDER
+
+Follow dependency order.
+
+## Phase 1 — Audit
+
+Understand repository and runtime.
+
+## Phase 2 — Data Model
+
+Implement/repair student, skill, project and requirement structures.
+
+## Phase 3 — Student Profiles
+
+Implement:
+
+* skills
+* preferences
+* availability
+* work style
+* resume upload where appropriate
+
+## Phase 4 — Project Analyzer
+
+Implement project requirement extraction/configuration.
+
+## Phase 5 — Matching Engine
+
+Implement:
+
+* skill coverage
+* complementarity
+* preferences
+* availability
+* work style
+* balance
+
+## Phase 6 — Optimization
+
+Implement constrained team generation.
+
+## Phase 7 — Explainability
+
+Implement team and student reasoning.
+
+## Phase 8 — Conflict Detection
+
+Implement warnings and repair suggestions.
+
+## Phase 9 — Faculty Controls
+
+Implement:
+
+* lock
+* move
+* exclude
+* regenerate
+* approve
+
+## Phase 10 — What-If
+
+Implement configurable weighting/team-size experiments.
+
+## Phase 11 — Feedback
+
+Implement the data model and workflow for future feedback-driven improvement.
+
+## Phase 12 — Testing
+
+Test all critical workflows.
+
+## Phase 13 — UI/UX
+
+Polish usability, responsiveness and error states.
+
+## Phase 14 — Security
+
+Audit data and credential handling.
+
+## Phase 15 — Documentation
+
+Update README and architecture/setup instructions.
+
+## Phase 16 — Final Audit
+
+Verify every critical requirement.
+
+---
+
+# 33. TESTING REQUIREMENTS
+
+Create tests for:
+
+### Data
+
+* invalid student data
+* missing skills
+* duplicate students
+* invalid team size
+
+### Matching
+
+* skill matching
+* skill complementarity
+* preference scoring
+* availability
+* work-style compatibility
+
+### Optimization
+
+* team size
+* uniqueness
+* required skill coverage
+* locked members
+* excluded combinations
+* infeasible scenarios
+
+### Explainability
+
+Verify that generated explanations correspond to actual scoring factors.
+
+### Regression
+
+Existing functionality must continue working.
+
+---
+
+# 34. EDGE CASES
+
+Explicitly test:
+
+* fewer students than required team size
+* more teams requested than possible
+* no student has a required skill
+* all students choose the same project
+* identical skill profiles
+* conflicting availability
+* locked assignments that make optimization impossible
+* missing resumes
+* malformed resumes
+* incomplete profiles
+* duplicate skills
+* zero-weight factors
+* 100% weight on one factor
+* no feasible solution
+
+The application must explain infeasibility rather than silently producing an invalid result.
+
+---
+
+# 35. UI QUALITY
+
+The system should feel like a professional college platform rather than a raw ML demo.
+
+Provide:
+
+* clear navigation
+* dashboards
+* forms
+* validation
+* loading states
+* error states
+* empty states
+* success messages
+* tables/cards where useful
+* team score visualization
+* explanations
+* warnings
+* accessible controls
+
+Do not use unnecessary animations.
+
+---
+
+# 36. PERFORMANCE
+
+Do not optimize prematurely.
+
+Measure before optimizing.
+
+Pay attention to:
+
+* resume parsing
+* embedding generation
+* optimization runtime
+* database queries
+* repeated model calls
+* large student datasets
+
+Cache expensive deterministic operations where appropriate.
+
+---
+
+# 37. FAILURE HANDLING
+
+When something fails:
+
+```text
+STOP
+?
+capture exact error
+?
+reproduce
+?
+identify root cause
+?
+fix
+?
+rerun failed test
+?
+run regression tests
+?
+continue
+```
+
+Never:
+
+* suppress errors
+* disable tests
+* fake results
+* replace AI with hardcoded output without disclosure
+* mark unfinished functionality as complete
+
+---
+
+# 38. STOP / ASK CONDITIONS
+
+Continue autonomously when the correct implementation is reasonably inferable.
+
+Ask the user only when:
+
+* credentials/authorization are genuinely required
+* destructive action is required
+* two critical requirements conflict
+* architecture cannot safely be inferred
+* production deployment requires an unavailable secret
+* an irreversible decision is necessary
+
+For ordinary low-risk ambiguity, make a reversible engineering decision and continue.
+
+---
+
+# 39. DEFINITION OF DONE
+
+A feature is complete only when:
+
+**IMPLEMENTED
+
+* INTEGRATED
+* TESTED
+* VERIFIED**
+
+A UI appearing on screen is not sufficient.
+
+A function existing is not sufficient.
+
+A test being written is not sufficient.
+
+Critical functionality requires actual execution evidence.
+
+---
+
+# 40. FINAL VALIDATION
+
+Before completion, verify:
+
+### Product
+
+* student registration/profile
+* skills
+* projects
+* project requirements
+* preferences
+* team generation
+* explanations
+* conflicts
+* faculty controls
+
+### AI
+
+* extraction
+* matching
+* scoring
+* optimization
+* explainability
+
+### Backend
+
+* validation
+* error handling
+* business logic
+* data integrity
+
+### Database
+
+* schema
+* relationships
+* constraints
+* persistence
+
+### Security
+
+* secrets
+* file uploads
+* authentication
+* authorization
+* private data
+
+### UI
+
+* usability
+* validation
+* loading
+* error states
+* responsive layout
+
+### Testing
+
+Run actual tests.
+
+### Runtime
+
+Run the application and test critical workflows.
+
+---
+
+# 41. EVIDENCE MATRIX
+
+Produce:
+
+| Requirement       | Implementation | Validation | Evidence | Result    |
+| ----------------- | -------------- | ---------- | -------- | --------- |
+| Student profile   | module/file    | test       | output   | PASS/FAIL |
+| Skill matching    | module/file    | test       | output   | PASS/FAIL |
+| Project analysis  | module/file    | test       | output   | PASS/FAIL |
+| Team optimization | module/file    | test       | output   | PASS/FAIL |
+| Explainability    | module/file    | test       | output   | PASS/FAIL |
+| Availability      | module/file    | test       | output   | PASS/FAIL |
+| Faculty override  | module/file    | test       | output   | PASS/FAIL |
+
+Every P0/P1 requirement must have evidence.
+
+---
+
+# 42. RESEARCH-QUALITY VALIDATION
+
+Because this is intended as a college project with potential research value, collect measurable evaluation metrics where feasible.
+
+Possible metrics:
+
+* skill coverage
+* preference satisfaction
+* availability compatibility
+* team balance
+* optimization score
+* constraint violations
+* student satisfaction
+* faculty satisfaction
+* runtime
+* comparison against random allocation
+* comparison against a simple baseline algorithm
+
+Do not fabricate results.
+
+If experimental data is unavailable, clearly report:
+
+> Evaluation dataset not yet available.
+
+---
+
+# 43. BASELINE COMPARISON
+
+Where feasible, compare your method against at least one simple baseline:
+
+### Baseline A
+
+Random team assignment.
+
+### Baseline B
+
+Skill-only matching.
+
+### Proposed
+
+Hybrid AI + optimization.
+
+Compare measurable outputs such as:
+
+```text
+Skill Coverage
+Preference Satisfaction
+Availability Compatibility
+Team Balance
+Constraint Violations
+Runtime
+```
+
+This will make the project substantially stronger academically.
+
+---
+
+# 44. DOCUMENTATION
+
+Maintain documentation covering:
+
+* project objective
+* architecture
+* setup
+* Python 3.11 environment
+* dependencies
+* database
+* AI pipeline
+* matching algorithm
+* scoring formula
+* optimization
+* explanation system
+* test instructions
+* GitHub workflow
+* limitations
+* future improvements
+
+Do not claim unsupported novelty.
+
+---
+
+# 45. FINAL REPORT
+
+When all work is complete, provide:
+
+## COMPLETED
+
+What was actually implemented.
+
+## CHANGED
+
+Important files/modules.
+
+## VERIFIED
+
+Tests/build/runtime results.
+
+## ARCHITECTURE
+
+Important architecture decisions.
+
+## AI/ML
+
+Algorithms and models actually used.
+
+## SECURITY
+
+Security controls verified.
+
+## RESEARCH
+
+Relevant evaluation/baseline results if available.
+
+## REMAINING
+
+Only genuinely incomplete work.
+
+## RISKS
+
+Known limitations.
+
+## COMMANDS
+
+Important setup/run/test/Git commands.
+
+## EVIDENCE
+
+Actual validation output.
+
+---
+
+# 46. FINAL BEHAVIOR
+
+Do not stop merely because the initial feature list has been implemented.
+
+After implementation:
+
+1. run tests
+2. inspect failures
+3. fix failures
+4. run regression tests
+5. inspect UI
+6. inspect data flow
+7. inspect security
+8. inspect Git changes
+9. verify documentation
+10. perform final forensic audit
+
+Never declare success without evidence.
+
+The ultimate objective is:
+
+> **A working, explainable, constraint-aware AI project team formation system that is technically feasible, practically useful, academically defensible, maintainable, and demonstrable.**
+
+Operate on the actual repository.
+
+Preserve working functionality.
+
+Make incremental changes.
+
+Use evidence.
+
+Do not hallucinate.
+
+Do not expose secrets.
+
+Do not bypass authentication or security controls.
+
+**COPY ? PASTE ? EXECUTE.**
